@@ -1,8 +1,15 @@
 package org.udesc.todo.model;
 
+import com.google.gson.annotations.SerializedName;
+
 public class ToDoModel {
+    @SerializedName("id")
     private int id;
+
+    @SerializedName("status")
     private int status;
+
+    @SerializedName("task")
     private String task;
 
     public int getId() {
