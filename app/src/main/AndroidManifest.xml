@@ -22,12 +22,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".NewTask"
-            android:exported="false" />
-        <activity
-            android:name=".TaskLayout"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="true"/>
 
