@@ -85,19 +85,8 @@ public class ToDoAdapter extends RecyclerView.Adapter<ToDoAdapter.ViewHolder> {
         fragment.show(activity.getSupportFragmentManager(), AddNewTask.TAG);
     }
 
-    public void addItem(int position){
-        ToDoModel item = toDoList.get(position);
-        Bundle bundle = new Bundle();
-        bundle.putInt("id", item.getId());
-        bundle.putString("task", item.getTask());
-        AddNewTask fragment = new AddNewTask();
-        fragment.setArguments(bundle);
-        fragment.show(activity.getSupportFragmentManager(), AddNewTask.TAG);
-    }
     public static class ViewHolder extends RecyclerView.ViewHolder{
         CheckBox task;
-
-
         ViewHolder(View view){
             super(view);
             task = view.findViewById(R.id.todoCheckBox);
